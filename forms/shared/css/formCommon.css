@@ -1,0 +1,185 @@
+.form-input-wrapper {
+  position: relative;
+  margin-top: 2.2em;
+}
+.form-input-wrapper label {
+  position: absolute;
+  top: 1.1em;
+  left: 0.5em;
+  transform: translateY(-50%);
+  transition-duration: 300ms;
+  transition-property: top, color, transform;
+}
+.form-input-wrapper label::first-letter {
+  text-transform: capitalize;
+}
+.form-input-wrapper input,
+.form-input-wrapper textarea {
+  padding-block: 0.5em;
+  padding-inline: 0.5em;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
+.form-input-wrapper textarea {
+  height: 200px;
+}
+
+:is(input, textarea):not(:-moz-placeholder-shown) {
+  outline: 0;
+}
+
+:is(input, textarea):not(:-ms-input-placeholder) {
+  outline: 0;
+}
+
+:is(input, textarea):focus,
+:is(input, textarea):not(:placeholder-shown) {
+  outline: 0;
+}
+:is(input, textarea):not(:-moz-placeholder-shown) + label {
+  top: -1em;
+  transform: translateY(-50%) scale(0.95);
+}
+:is(input, textarea):not(:-ms-input-placeholder) + label {
+  top: -1em;
+  transform: translateY(-50%) scale(0.95);
+}
+:is(input, textarea):focus + label,
+:is(input, textarea):not(:placeholder-shown) + label {
+  top: -1em;
+  transform: translateY(-50%) scale(0.95);
+}
+
+select, option {
+  font-size: inherit;
+  padding: 0.4em;
+}
+
+option {
+  font-size: 1em;
+}
+
+input, textarea {
+  background: var(--input-bg);
+}
+
+.form-input-wrapper label, .dark-form input {
+  color: #fff;
+}
+
+form {
+  width: 50%;
+  max-width: 600px;
+}
+form > * {
+  max-width: 450px;
+  width: 100%;
+}
+
+form .title {
+  color: #fff;
+}
+form .title:before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: var(--green);
+  bottom: 0.2em;
+  position: relative;
+  margin-right: 0.5em;
+}
+
+.form-segment {
+  color: var(--black);
+}
+.form-segment > * {
+  width: 100%;
+}
+.form-segment [class*=long-btn] {
+  margin-top: 1em;
+}
+
+.form-wrapper {
+  margin-block: 1em;
+  max-width: 1500px;
+  width: 100%;
+}
+.form-wrapper > * {
+  padding: 1.5em;
+}
+
+[class*=icon] {
+  display: inline-block;
+}
+[class*=icon] svg {
+  fill: currentColor;
+}
+
+.form-description {
+  color: #fff;
+  align-self: stretch;
+  flex-basis: 600px;
+  position: relative;
+  z-index: 2;
+  margin-block: 1em;
+  padding-bottom: 3em;
+  padding-right: 3em;
+}
+.form-description p.strong {
+  font-weight: bold;
+}
+.form-description p.strong:before {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+  margin-right: 0.5em;
+  background: #fff;
+}
+.form-description p.middle {
+  margin-block: 2em;
+}
+.form-description p.middle [class*=icon] {
+  margin-right: 1em;
+  max-width: 1.4em;
+}
+.form-description:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -4em;
+  right: 0;
+  background: var(--green);
+  z-index: -1;
+  border-radius: inherit;
+  transform: rotate(-3deg);
+  transform-origin: bottom left;
+}
+
+.follow-description {
+  margin-top: 2em;
+}
+
+.social-links {
+  margin-top: 1em;
+}
+.social-links [class*=icon] {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: var(--blue-dark);
+}
+.social-links [class*=icon] svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=formCommon.css.map */

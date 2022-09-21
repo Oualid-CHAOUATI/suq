@@ -1,0 +1,46 @@
+.hero-gallery{
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    position: absolute;
+    top:0;
+    right:0;
+    justify-content: flex-end;
+
+    img{
+
+        height: 240px;
+        width: 170px;
+        background: orange;
+        margin: .5em;
+        border-radius: .6em;
+        object-fit: cover;
+    }
+
+    .hero-gallery-content{
+        transform: rotate(25deg) translateY(-100px);
+        .columns-wrapper{
+            .column{
+                animation: heroGallery 85s infinite linear ;
+            }
+            &:nth-child(2){
+                .column{
+
+                    animation-direction:reverse ;
+                }
+            }
+        }
+
+    }
+
+    
+}
+
+
+@keyframes heroGallery{
+
+    100%{
+        transform: translateY(-100%);
+    }
+}

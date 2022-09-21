@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="shared/all/css/all.css">
+    <link rel="stylesheet" href="forms/shared/css/formCommon.css">
+    <link rel="stylesheet" href="forms/ajoutProduit/css/ajoutProduit.css">
+
+</head>
+<body>
+  <header class="container flex">
+    <a href="" class="logo">SUUQ</a>
+    <nav class="flex-center">
+      <ul class="menu flex center-align">
+        <button class="x-btn flex-center"></button>
+        <li class="li"><a href="home.html">Acceuil</a></li>
+        <li class="li"><a href="categories.html">Categories</a></li>
+        <li class="global">
+          <a class="btn">Produits</a>
+
+          <ul class="sub-menu">
+            <li><a href="produitsNeufs.html">Neufs</a></li>
+            <li><a href="produitsOccas.html">Occasion</a></li>
+            <li><a href="ajoutProduit.html">Ajouter </a></li>
+          </ul>
+        </li>
+        <li class="li"><a href="contact.html">Contact</a></li>
+
+        <li>
+          <a href="profil.html" class="profil-icon to-hide-desktop">profil</a>
+        </li>
+
+        <li>
+          <a href="rechercher.html" class="search-icon to-hide-desktop">rechercher</a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="scheme-checkbox" />
+          <div class="scheme-label-wrapper iflex center-align">
+            <label for="scheme-checkbox" class="ib btn"></label>
+          </div>
+        </li>
+      </ul>
+      <a href="connexion.html" class="long-btn-r bg-blue">m'inscrire</a>
+      <a href="profil.html" class="profil-icon to-hide-mobile">profil</a>
+      <a href="rechercher.html" class="search-icon to-hide-mobile">rechercher</a>
+      <a href="panier.html" class="panier-icon">panier</a>
+
+      <button class="hamburger btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="37.719"
+          height="28.22"
+          viewBox="0 0 37.719 28.22"
+        >
+          <g
+            id="Groupe_94"
+            data-name="Groupe 94"
+            transform="translate(6391.387 218.246)"
+          >
+            <line
+              id="Ligne_11"
+              data-name="Ligne 11"
+              x2="33.719"
+              transform="translate(-6389.387 -216.246)"
+              fill="none"
+              stroke="#271b1b"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+            <line
+              id="Ligne_14"
+              data-name="Ligne 14"
+              x2="29.137"
+              transform="translate(-6384.806 -204.136)"
+              fill="none"
+              stroke="#271b1b"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+            <line
+              id="Ligne_13"
+              data-name="Ligne 13"
+              x2="33.719"
+              transform="translate(-6389.387 -192.026)"
+              fill="none"
+              stroke="#271b1b"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+          </g>
+        </svg>
+      </button>
+    </nav>
+  </header>
+     
+    <h2 class="section-title uppercase center-text">
+        <span data-text="Ajouter produit" class="iflex-center"">
+            Ajouter produit 
+        </span>
+
+    </h2>
+
+    <div class="container flex-center">
+
+    <div class="form-wrapper  flex-center  dark-form wrap__ bg-blue r3">
+
+        <div class="form-description r3">
+
+            <p class="strong">
+                Décrivez bien votre produit.
+            </p>
+            <p class="middle">   
+
+                <h4>Exemple</h4>
+                <div class="exemple flex wrap__">
+                    <span class="prop">Nom :</span>
+                    <span class="desc">
+                        Pc Dell i5<br>
+                        Tel OPPOA74 8gb/128gb
+                    </span>
+                </div>
+                
+                <div class="exemple flex wrap__">
+                    <span class="prop">Description :</span>
+                    <span class="desc">
+                        Pc bon etat en marche depuis 2018<br>
+                        RAM 8gb<br>
+                        Processeue intel I5 5eme gen 
+                        <br>
+                        Carte graphique : NVDIA ..
+                    </span>
+                </div>
+                <div class="exemple important flex wrap__ r3">
+                    <span class="prop">!IMPORTANT :</span>
+                    <span class="desc">
+                        Vous pouvez utiliser *** pour inserer des sauts de ligne<br>
+                        par exemple:<br>
+                        <span class="important1 r2">
+                            Marque : AZUS ** Processeur intel i5
+
+                        </span>
+                        
+                        <span class="important2 r2">
+                            sera affiché comme suit : 
+
+                        </span>
+                        
+                        <div class="important1 r2">
+                            Marque : AZUS <br> Processeur intel i5
+
+                        </div>
+
+                    </span>
+                </div>
+                </p>
+            <div class="follow-description">
+                <h2 class="title">SUIVEZ NOUS<br> 
+                    sur les réseaux sociaux</h2>
+
+                    <div class="social-links ">
+                        <a href="" class="facebook-icon"></a>
+                        <a href="" class="insta-icon"></a>
+                    </div>
+            </div>
+            
+        </div>
+        <form action="" class="flex-center column">
+            <h2 class="title">Décrivez votre produit!</h2>
+
+            <div class="form-segment">
+
+<div class="form-input-wrapper">
+<input type="text" name="nom" id="nom"  placeholder=" "required>
+<label for="nom">Nom</label>
+</div>
+<div class="form-input-wrapper">
+<input type="text" name="prix" id="adresseEmail"  placeholder=" "required>
+<label for="prix">Prix</label>
+</div>
+<div class="category-input-wrapper">
+    <select name="category-selecy" id="category-select"  required>
+    <option value="" selected disabled>Categorie</option>
+    <option value="" selected disabled>vetemenets</option>
+    <option value="" selected disabled>Electronique</option>
+   
+    
+    </select>
+    
+</div>
+<div class="img-file-input-wrapper">
+    <div class="long-btn-r input-file-wrapper  flex center-align ">
+   
+        Ajouter une image
+        <input type="file" label="" required id="imgFileInput" class="img-file-input">
+        <span class="input-file-icon"></span>
+    
+    </div>
+    <p class="img-selected" style="color:#fff">
+        image sélectionnée :
+        <span class="img-value">VIDE</span>
+    </p>
+</div>
+
+
+<div class="form-input-wrapper" style="margin-top: 3em;">
+
+   
+<textarea name="description" id="description"  ></textarea >
+<label for="description">Description</label>
+</div>
+
+
+<div class="nv-data-wrapper">
+<div class="nv-data-label-wrapper">
+
+    <input type="checkbox" checked id="check"> <label class="" for="check" >  Les gens vous contacterons au numero et  adresse email enregistrés sur votre compte  </label>
+    <div class="nv-data r2">
+        <h4 class="title">Remplissez au moins un champ :</h4>
+        <div class="form-input-wrapper">
+    
+       <input type="number"  name="numero" id="numero" placeholder=" ">
+            <label for="description">Numero</label>
+            </div>
+        <div class="form-input-wrapper">
+    
+       <input type="email" name="email" id="email"  placeholder=" ">
+            <label for="description">Email</label>
+            </div>
+        
+    </div>
+</div>
+
+
+</div>
+<button class="long-btn-r bg-green">Enregistrer</button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="container--">
+  <div class="footer-content jc-space-between flex wrap__">
+    <div class="col">
+      <h4 class="footer-title">Contact</h4>
+      <div class="col-txt">
+        <p>Email : <span>suuq@gmail.com</span></p>
+        <p>Tel : <span>070000000</span></p>
+        <a href="contact.html" class="long-btn-r bg-green">Contact</a>
+      </div>
+    </div>
+    <div class="col">
+      <h4 class="footer-title">Réseaux sociaux</h4>
+      <div class="col-txt">
+        <a href="">Facebook</a>
+        <br />
+        <a href="">Instagram</a>
+      </div>
+    </div>
+    <div class="col">
+      <h4 class="footer-title">Conditions d'utilisation</h4>
+      <div class="col-txt">
+        <p>
+          Nous t'invitons a lire les condition d'utilisation de notre
+          plateforme par <a href="conditionUtilisation.html">ici</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="center-text copyrights">&copy; 2021 tout droits réservés</div>
+</footer>
+</body>
+<script src="shared/all/js/all.js"></script>
+<script src="forms/shared/js/addIcons.js"></script>
+<script src="forms/ajoutProduit/js/ajoutProduit.js"></script>
+
+</html>

@@ -1,0 +1,33 @@
+form {
+  color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 1em;
+  position: relative;
+  background: var(--blue-dark);
+  margin-bottom: 1em;
+}
+
+form > * {
+  margin-bottom: 1em;
+  width: 100%;
+}
+form > * p {
+  margin-bottom: 1em;
+}
+form > * input, form > * select {
+  color: inherit;
+}
+
+.input-wrapper {
+  padding: 0.5em;
+}
+
+.bordered {
+  border: 1px solid;
+}
+
+select {
+  background-color: #fff;
+  color: #000 !important;
+}/*# sourceMappingURL=rechercher.css.map */

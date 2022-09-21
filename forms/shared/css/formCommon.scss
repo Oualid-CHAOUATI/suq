@@ -1,0 +1,149 @@
+@import "others/formPresets.scss";
+
+
+input,textarea{
+    background: var(--input-bg);
+}
+.form-input-wrapper label,.dark-form input{
+    color: #fff;
+}
+
+$b-width:50px;
+
+    
+    
+    form {
+        >* {
+            max-width: 450px;
+            width: 100%;
+        }
+    
+        width: 50%;
+        max-width: 600px;
+    
+        
+    }
+
+
+    form .title {
+        color: #fff;
+    
+        &:before {
+            content: "";
+            display: inline-block;
+            width: $b-width;
+            height: 3px;
+            background: var(--green);
+            bottom: .2em;
+            position: relative;
+            margin-right: .5em;
+        }
+    }
+    .form-segment {
+        color: var(--black);
+    
+        >* {
+            width: 100%;
+        }
+    
+        [class*="long-btn"] {
+            margin-top: 1em;
+        }
+    }
+    .form-wrapper{
+        margin-block:1em ;
+        max-width: 1500px;
+        width: 100%;
+        
+            &>* {
+                padding: 1.5em;
+            }
+        }
+        
+    [class*="icon"] {
+        display: inline-block;
+    
+        svg {
+            fill: currentColor;
+        }
+    }
+    .form-description {
+        color: #fff;
+    
+        align-self: stretch;
+        flex-basis: 600px;
+    
+    
+        p.strong {
+            font-weight: bold;
+    
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 3px;
+                width: $b-width;
+                margin-right: .5em;
+                background: #fff;
+            }
+        }
+    
+        p.middle {
+            margin-block: 2em;
+    
+            [class*="icon"] {
+                margin-right: 1em;
+                max-width: 1.4em;
+    
+            }
+        }
+    
+        position: relative;
+        z-index:2;
+    
+        margin-block: 1em;
+        padding-bottom: 3em;
+        padding-right: 3em;
+    
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -4em;
+            right: 0;
+            background: var(--green);
+            z-index: -1;
+            border-radius: inherit;
+            transform: rotate(-3deg);
+            transform-origin: bottom left;
+        }
+    }
+    
+    .follow-description{
+        margin-top: 2em;
+    }
+    
+    .social-links {
+        margin-top: 1em;
+    
+        [class*="icon"] {
+            $s: 2em;
+            height: $s;
+            width: $s;
+            border-radius: 50%;
+            padding: .5em;
+            background: var(--blue-dark);
+    
+            svg {
+                max-height: 100%;
+                max-width: 100%;
+            }
+    
+        }
+    }
+    
+    @media (max-width:1100px) {
+        form {
+            width: 100%;
+        }
+    }

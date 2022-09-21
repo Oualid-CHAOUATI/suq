@@ -1,0 +1,131 @@
+@import"others/variables.scss";
+@import "others/presets.scss";
+@import "others/fonts.scss";
+@import "others/containers.scss";
+@import "others/scrollbar.scss";
+@import "others/header.scss";
+
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &>* {
+        width: 100%;
+    }
+}
+
+p {
+    line-height: 1.4;
+}
+
+.section-title {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    color: var(--blue-text);
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+
+    span {
+        position: relative;
+        padding: 0 1em;
+        border-radius: 2em;
+
+    }
+
+
+    span:before,span:after{
+        position: absolute;
+        left: -50vw;
+        right: -50vw;
+        margin: auto;
+
+
+    }
+    span::before {
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        height: 6px;
+        width: calc(100% + 200px);
+        max-width: 90vw;
+        color: inherit;
+        $s: 100px;
+        background: linear-gradient(90deg, currentColor, transparent #{$s}, transparent calc(100% - #{$s}), currentColor);
+        border-radius: 1em;
+        z-index: -1;
+        opacity: .4;
+    }
+
+    span::after {
+        content: attr(data-text);
+        top: 20%;
+        height: 7px;
+        font-size: 2em;
+        width: 100vw;
+        text-align: center;
+        opacity: .05;
+        z-index: 0;
+
+    }
+
+}
+
+.bg-blue {
+    background-color: var(--blue-dark);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+[class*="long-btn"] {
+    padding: .4em .8em;
+    text-align: center;
+    color: #fff;
+
+    &[class*="long-btn-r"] {
+        border-radius: .3em;
+    }
+}
+
+.max-c {
+    width: max-content;
+}
+
+[class*="new"] {
+    position: relative;
+
+    &::before {
+        content: "NEW";
+        position: absolute;
+        top: 0;
+        right: 1em;
+        left: auto;
+        padding: .5em .5em .6em .5em;
+        background: var(--green);
+        width: max-content;
+        color: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+    }
+}
+
+
+
+.main-txt {
+    color: var(--text-color);
+}
+
+.sec-txt {
+    color: var(--text-color-light);
+}
+
+.b {
+    font-weight: bold;
+}

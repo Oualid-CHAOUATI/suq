@@ -1,0 +1,98 @@
+div.sections-wrapper {
+  border-radius: 2em;
+  overflow: hidden;
+  position: relative;
+}
+div.sections-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: inherit;
+  background: rgba(96, 121, 233, 0.13);
+}
+
+.tab-btn {
+  border-radius: 2em;
+  padding: 0.8em 1.1em;
+  width: 100%;
+  max-width: 27ch;
+  color: #fff;
+  text-align: center;
+  transition: transform 300ms;
+  position: relative;
+}
+.tab-btn.left-label {
+  transform: scale(0.8);
+  background: var(--blue);
+}
+.tab-btn.left-label:before {
+  opacity: 0;
+}
+.tab-btn.right-label {
+  transform: scale(1);
+  background: var(--blue-dark);
+}
+.tab-btn.right-label:before {
+  opacity: 1;
+}
+.tab-btn:before {
+  position: absolute;
+  content: "";
+  top: 0.8em;
+  right: 0.8em;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  box-shadow: 0 0 19px currentColor;
+  background: #fff;
+  transition: opacity 300ms;
+}
+
+#checkbox:checked ~ .sections .sections-content {
+  transform: translateX(0);
+}
+#checkbox:checked ~ .sections .sections-content .left-section {
+  height: auto;
+}
+#checkbox:checked ~ .buttons-wrapper .left-label {
+  transform: scale(1);
+}
+#checkbox:checked ~ .buttons-wrapper .left-label:before {
+  opacity: 1;
+}
+#checkbox:checked ~ .buttons-wrapper .right-label {
+  transform: scale(0.8);
+}
+#checkbox:checked ~ .buttons-wrapper .right-label:before {
+  opacity: 0;
+}
+
+.sections-content {
+  transition: transform 500ms;
+  transform: translateX(-100%);
+}
+.sections-content .left-section {
+  height: 0;
+}
+.sections-content > * {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.product-card {
+  padding: 1em;
+  margin: 0.5em;
+  background: var(--bg-color);
+}
+
+.product-card, .left, .right {
+  gap: 1em;
+}
+
+.section-description {
+  margin-bottom: 1.5em;
+}/*# sourceMappingURL=shared.css.map */

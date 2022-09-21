@@ -1,0 +1,19 @@
+::-webkit-scrollbar{
+    width: 15px;
+    max-width: 1.5vw;
+    background: var(--bg-color);
+    
+}
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    max-height: 50px;
+
+    &:hover {
+        background-color: rgb(158, 158, 243);
+    }
+}
+
+::-webkit-scrollbar-button {
+    background: rgb(255, 1, 170);
+    height: 15px;
+}

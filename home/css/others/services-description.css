@@ -1,0 +1,47 @@
+.service-card [class*=btn] {
+  color: var(--white);
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.service-card [class*=btn] span {
+  height: 1em;
+  width: 1em;
+  margin-right: 1em;
+}
+.service-card [class*=btn] span svg {
+  fill: currentColor;
+}
+.service-card p {
+  margin-top: 1em;
+}
+.service-card p::first-letter {
+  margin-left: 2em;
+}
+.service-card:first-child {
+  --clr: var(--green-text);
+}
+.service-card:last-child {
+  --clr: var(--blue-dark);
+}
+.service-card .title {
+  color: var(--text-color);
+  margin-left: 1em;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+.service-card .title:before, .service-card .title:after {
+  content: "";
+  position: absolute;
+  top: 0.4em;
+  left: -1em;
+  height: 0.3em;
+  width: 0.3em;
+  background: var(--clr);
+  border-radius: 50%;
+}
+.service-card .title:after {
+  transform-origin: right;
+  transform: scale(5);
+  opacity: 0.4;
+}/*# sourceMappingURL=services-description.css.map */

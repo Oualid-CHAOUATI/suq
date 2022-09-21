@@ -1,0 +1,32 @@
+.form-input-wrapper {
+  border: 2px solid;
+}
+
+input, textarea, select {
+  background: var(--bg-color);
+}
+
+form {
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+form > * {
+  width: 100%;
+}
+form .long-btn-r {
+  margin-top: 0.5em;
+  max-width: 200px;
+}
+form:before {
+  content: "";
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}/*# sourceMappingURL=profil.css.map */

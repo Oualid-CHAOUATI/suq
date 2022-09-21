@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="shared/all/css/all.css">
+    <link rel="stylesheet" href="forms/shared/css/formCommon.css">
+    <link rel="stylesheet" href="forms/connexion/css/sign.css">
+</head>
+<body>
+  <header class="container flex">
+    <a href="" class="logo">SUUQ</a>
+    <nav class="flex-center">
+      <ul class="menu flex center-align">
+        <button class="x-btn flex-center"></button>
+        <li class="li"><a href="home.html">Acceuil</a></li>
+        <li class="li"><a href="categories.html">Categories</a></li>
+
+        <li class="global">
+          <a class="btn">Produits</a>
+
+          <ul class="sub-menu">
+            <li><a href="produitsNeufs.html">Neufs</a></li>
+            <li><a href="produitsOccas.html">Occasion</a></li>
+            <li><a href="ajoutProduit.html">Ajouter </a></li>
+          </ul>
+        </li>
+        <li class="li"><a href="contact.html">Contact</a></li>
+
+        <li>
+          <a href="profil.html" class="profil-icon to-hide-desktop">profil</a>
+        </li>
+
+        <li>
+          <a href="rechercher.html" class="search-icon to-hide-desktop">rechercher</a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="scheme-checkbox" />
+          <div class="scheme-label-wrapper iflex center-align">
+            <label for="scheme-checkbox" class="ib btn"></label>
+          </div>
+        </li>
+      </ul>
+      <a href="connexion.html" class="long-btn-r bg-blue">m'inscrire</a>
+      <a href="profil.html" class="profil-icon to-hide-mobile">profil</a>
+      <a href="rechercher.html" class="search-icon to-hide-mobile">rechercher</a>
+      <a href="panier.html" class="panier-icon">panier</a>
+
+      <button class="hamburger btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="37.719"
+          height="28.22"
+          viewBox="0 0 37.719 28.22"
+        >
+          <g
+            id="Groupe_94"
+            data-name="Groupe 94"
+            transform="translate(6391.387 218.246)"
+          >
+            <line
+              id="Ligne_11"
+              data-name="Ligne 11"
+              x2="33.719"
+              transform="translate(-6389.387 -216.246)"
+              fill="none"
+              stroke="#271b1b"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+            <line
+              id="Ligne_14"
+              data-name="Ligne 14"
+              x2="29.137"
+              transform="translate(-6384.806 -204.136)"
+              fill="none"
+              stroke="#271b1b"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+            <line
+              id="Ligne_13"
+              data-name="Ligne 13"
+              x2="33.719"
+              transform="translate(-6389.387 -192.026)"
+              fill="none"
+              stroke="#271b1b"
+              stroke-linecap="round"
+              stroke-width="4"
+            />
+          </g>
+        </svg>
+      </button>
+    </nav>
+  </header>
+    <h2 class="section-title uppercase center-text">
+        <span data-text="Connexion" class="iflex-center"">
+            Connexion 
+        </span>
+
+    </h2>
+
+    <div class="container flex-center">
+
+    <div class="form-wrapper  dark-form flex-center  wrap__ bg-blue r3">
+
+        <div class="form-description r3">
+<div class="top flex">
+   <div class="left">
+    <h2 class=" title strong center-text">
+        Vous avez déja un compte?
+    </h2>
+    <p class="middle center-text">   
+Authentifier vous maintenant!
+        </p>
+        <div class="wrapper flex-center">
+
+            <button class="long-btn-r bg-blue toggle-state-btn">M'authentifier</button>
+        </div>
+        
+   </div>
+   <div class="right">
+    <h2 class=" title strong center-text">
+        Vous n'avez pas de  compte?
+    </h2>
+    <p class="middle center-text">   
+Incriez vous maintenant!
+        </p>
+        <div class="wrapper flex-center">
+
+            <button class="long-btn-r bg-blue toggle-state-btn">M'inscrire</button>
+        </div>
+</div>
+</div>
+           
+<div class="bottom">
+    <p class="center-text qst">
+        <span>
+            Avez vous des questions ? <br> N'hésitez pas a nous contacter
+        </span>
+        </p>
+    <div class="contact-call flex-center">
+        
+<a href="contact.html" class="long-btn-r bg-blue">Nous contacter</a>
+
+            <div class="social-links flex">
+                <a href="" class="facebook-icon"></a>
+                <a href="" class="insta-icon"></a>
+            </div>
+    </div>
+</div>
+           
+            
+        </div>
+        <div class="forms-wrapper flex">
+            <form action="" class="flex-center column right">
+                <h2 class="title">M'inscrire !</h2>
+        <div class="form-segments-wrapper">
+            <div class="form-segments-content flex">
+    
+                <div class="form-segment">
+                    <div class="form-input-wrapper">
+                        <input type="text" name="email" id="email"  placeholder=" " required>
+                        <label for="email">Email</label>
+                        </div>
+
+                        <div class="form-input-wrapper">
+                            <input type="password" name="password" id="password"  placeholder=" " required>
+                            <label for="password">Mot de passe</label>
+                            </div>
+                        <div class="form-input-wrapper">
+                            <input type="password-confirm" name="password-confirm" id="password-confirm"  placeholder=" " required>
+                            <label for="password-confirm">Confirmer votre mot de passe</label>
+                            </div>
+                            <button class="long-btn-r bg-green next-btn">Suivant</button>
+
+                            
+
+                </div>
+                <div class="form-segment">
+    
+                    <div class="form-input-wrapper">
+                    <input type="text" name="nom" id="nom"  placeholder=" " required>
+                    <label for="nom">Nom</label>
+                    </div>
+                    <div class="form-input-wrapper">
+                    <input type="text" name="prenom" id="prenom"  placeholder=" " required>
+                    <label for="prenom">prenom</label>
+                    </div>
+                    <div class="birthday-wrapper">
+                        <p class="white birth-label">
+                            <span>
+                                Date de naissance
+                            </span>
+                        </p>
+                        
+                        <div class="inputs-wrapper flex jc-space-between  wrap__">
+                            <div class="form-input-wrapper">
+                                <input type="number" name="Jour" id="Jour" min="1" max="31"  placeholder=" " required>
+                                <label for="jour">Jour</label>
+                                </div>
+                            <div class="form-input-wrapper">
+                                <input type="number" name="Mois" id="Mois" min="1" max="12"  placeholder=" " required>
+                                <label for="Mois">Mois</label>
+                                </div>
+                            <div class="form-input-wrapper">
+                                <input type="number" name="annee" id="annee" min="1"   placeholder=" " required>
+                                <label for="annee">Année</label>
+                                </div>
+                        </div>
+                       
+                       
+                        
+                    </div>
+                    
+                    <button class="long-btn-r bg-green next-btn">Suivant</button>
+                    <button class="long-btn return-btn flex center-align r3">
+                        <span class="return-back-icon"></span>
+                        revenir en arriere</button>
+                                </div>
+    
+                                
+                                <div class="form-segment">
+                                    <div class="form-input-wrapper">
+                                        <input type="text" name="numero" id="numero"  placeholder=" " required>
+                                        <label for="numero">numero tel</label>
+                                        </div>
+    
+                                        <div class="form-input-wrapper">
+                                            <input type="adresse" name="adresse" id="adresse"  placeholder=" " required>
+                                            <label for="adresse">adresse</label>
+                                            </div>
+                                       
+                                            <button class="long-btn-r bg-green">Valider</button>
+    
+                                            <button class="long-btn return-btn flex center-align r3">
+                                                <span class="return-back-icon"></span>
+                                                revenir en arriere</button>
+    
+                                </div>
+                                   
+            </div>
+        </div>
+                
+                
+                
+            </form>
+
+            <form action="  " class="flex-center column left">
+                <h2 class="title">M'authentifier !</h2>
+<div class="form-segment">
+    <div class="form-input-wrapper">
+        <input type="email" name="email" id="email"  placeholder=" " required>
+        <label for="email">email</label>
+        </div>
+    <div class="form-input-wrapper">
+        <input type="password" name="password" id="password"  placeholder=" " required>
+        <label for="password">mot de passe</label>
+        </div>
+        <button class="long-btn-r bg-green">Valider</button>
+
+</div>
+            </form>
+        </div>
+            
+
+    </div>
+</div>
+<footer class="container--">
+  <div class="footer-content jc-space-between flex wrap__">
+    <div class="col">
+      <h4 class="footer-title">Contact</h4>
+      <div class="col-txt">
+        <p>Email : <span>suuq@gmail.com</span></p>
+        <p>Tel : <span>070000000</span></p>
+        <a href="contact.html" class="long-btn-r bg-green">Contact</a>
+      </div>
+    </div>
+    <div class="col">
+      <h4 class="footer-title">Réseaux sociaux</h4>
+      <div class="col-txt">
+        <a href="">Facebook</a>
+        <br />
+        <a href="">Instagram</a>
+      </div>
+    </div>
+    <div class="col">
+      <h4 class="footer-title">Conditions d'utilisation</h4>
+      <div class="col-txt">
+        <p>
+          Nous t'invitons a lire les condition d'utilisation de notre
+          plateforme par <a href="conditionUtilisation.html">ici</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="center-text copyrights">&copy; 2021 tout droits réservés</div>
+</footer>
+</body>
+<script src="shared/all/js/all.js"></script>
+<script src="forms/connexion/js/connexion.js"></script>
+<script src="forms/shared/js/addIcons.js"></script>
+
+
+</html>

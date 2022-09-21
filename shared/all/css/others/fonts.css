@@ -1,0 +1,11 @@
+:root {
+  --font-size:Clamp(18px,1.5vw,25px);
+}
+
+body {
+  font-size: var(--font-size);
+}
+
+.main-title {
+  text-align: right;
+}/*# sourceMappingURL=fonts.css.map */

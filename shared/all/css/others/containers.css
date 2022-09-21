@@ -1,0 +1,10 @@
+.container {
+  padding-inline: calc(0.1em + 2vw);
+  max-width: 1800px;
+  margin-inline: auto;
+}
+
+.container-- {
+  max-width: 1800px;
+  margin-inline: auto;
+}/*# sourceMappingURL=containers.css.map */
