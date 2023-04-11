@@ -49,10 +49,8 @@
   bottom: 0;
   margin: auto;
   width: min(1100px, 90vw);
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   max-height: 90vh;
@@ -164,7 +162,6 @@
 }
 
 .close-btn {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
   top: 20px;

@@ -29,19 +29,11 @@
   outline: 0;
 }
 
-:is(input, textarea):not(:-ms-input-placeholder) {
-  outline: 0;
-}
-
 :is(input, textarea):focus,
 :is(input, textarea):not(:placeholder-shown) {
   outline: 0;
 }
 :is(input, textarea):not(:-moz-placeholder-shown) + label {
-  top: -1em;
-  transform: translateY(-50%) scale(0.95);
-}
-:is(input, textarea):not(:-ms-input-placeholder) + label {
   top: -1em;
   transform: translateY(-50%) scale(0.95);
 }

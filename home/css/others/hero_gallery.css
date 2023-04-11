@@ -21,17 +21,10 @@
   transform: rotate(25deg) translateY(-100px);
 }
 .hero-gallery .hero-gallery-content .columns-wrapper .column {
-  -webkit-animation: heroGallery 85s infinite linear;
-          animation: heroGallery 85s infinite linear;
+  animation: heroGallery 85s infinite linear;
 }
 .hero-gallery .hero-gallery-content .columns-wrapper:nth-child(2) .column {
   animation-direction: reverse;
-}
-
-@-webkit-keyframes heroGallery {
-  100% {
-    transform: translateY(-100%);
-  }
 }
 
 @keyframes heroGallery {

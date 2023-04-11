@@ -21,17 +21,10 @@
   transform: rotate(25deg) translateY(-100px);
 }
 .hero-gallery .hero-gallery-content .columns-wrapper .column {
-  -webkit-animation: heroGallery 85s infinite linear;
-          animation: heroGallery 85s infinite linear;
+  animation: heroGallery 85s infinite linear;
 }
 .hero-gallery .hero-gallery-content .columns-wrapper:nth-child(2) .column {
   animation-direction: reverse;
-}
-
-@-webkit-keyframes heroGallery {
-  100% {
-    transform: translateY(-100%);
-  }
 }
 
 @keyframes heroGallery {
@@ -110,7 +103,6 @@
 }
 
 .service-card {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-inline: auto;
@@ -176,7 +168,6 @@
 .text-content .main-title {
   white-space: nowrap;
   font-size: clamp(18px, 7vw, 80px);
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }

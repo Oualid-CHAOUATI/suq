@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&display=swap");
 :root {
-  --green: #4BE346;
+  --green: #2eb629;
   --green-light: rgb(185, 235, 185);
   --green-text: #2FC92A;
-  --blue: #C888E2;
+  --blue: #6c2b8842;
   --blue-text: #C90AF6;
-  --blue-dark: #690690;
+  --blue-dark: #772f94;
   --white: #fff;
   --white-light: rgb(223, 204, 204);
   --black: #1a1919;
@@ -220,7 +221,6 @@ header {
   padding: 0.7em 0.5em;
   background: var(--bg-color);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.205);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -502,6 +502,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Kanit", sans-serif;
 }
 body > * {
   width: 100%;
@@ -572,7 +573,6 @@ p {
 }
 
 .max-c {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -588,7 +588,6 @@ p {
   left: auto;
   padding: 0.5em 0.5em 0.6em 0.5em;
   background: var(--green);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: #fff;

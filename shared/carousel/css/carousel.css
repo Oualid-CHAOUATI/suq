@@ -56,7 +56,6 @@
   background: #fff;
   padding: 0 0.4em;
   position: relative;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: var(--blue-dark);
@@ -161,7 +160,6 @@
 }
 
 .carousel {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   transition: 200ms;

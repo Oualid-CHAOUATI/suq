@@ -22,7 +22,6 @@ select {
 
 .input-file-wrapper {
   background: var(--blue);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   overflow: hidden;
